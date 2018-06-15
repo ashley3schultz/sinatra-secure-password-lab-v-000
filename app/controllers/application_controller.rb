@@ -17,7 +17,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/signup" do
-    user = User.new(:username params[:username], password: params[:password], balance: 0)
+    user = User.new(username: params[:username], password: params[:password], balance: 0)
     binding.pry
     if user.save
       redirect '/login'
