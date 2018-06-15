@@ -20,6 +20,8 @@ class ApplicationController < Sinatra::Base
     binding.pry
     if params[:username] == "" || params[:username] == nil
       erb :failure
+    else params[:password] == "" || params[:password] == nil
+      
     #if params[:username].empty? && params[:passwaord]
     #  user = User.new(username: params[:username], password: params[:password], balance: 0)
     #  user.save
