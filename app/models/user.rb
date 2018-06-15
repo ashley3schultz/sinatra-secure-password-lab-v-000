@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   has_secure_password
 
-  def password_digest=(password)
+  def password_digest
   end
 end
