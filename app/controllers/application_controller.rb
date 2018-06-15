@@ -21,7 +21,7 @@ class ApplicationController < Sinatra::Base
     if params[:username] == ""
       redirect "/failure"
     elsif user.save
-        session[:user_id] = user.id
+        #session[:user_id] = user.id
         redirect "/login"
     else
         redirect "/failure"
